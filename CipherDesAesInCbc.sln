@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CipherDesAesInCbc", "CipherDesAesInCbc\CipherDesAesInCbc.csproj", "{99705A6E-1AF0-40B3-944B-800CF01FFF09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{05182091-27A7-4F01-87F0-134D7DF3D40D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DES-CBC", "DES-CBC\DES-CBC.csproj", "{024A2BBD-39B5-462B-BA12-3A5A1AF1FD30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99705A6E-1AF0-40B3-944B-800CF01FFF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99705A6E-1AF0-40B3-944B-800CF01FFF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99705A6E-1AF0-40B3-944B-800CF01FFF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99705A6E-1AF0-40B3-944B-800CF01FFF09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05182091-27A7-4F01-87F0-134D7DF3D40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05182091-27A7-4F01-87F0-134D7DF3D40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05182091-27A7-4F01-87F0-134D7DF3D40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05182091-27A7-4F01-87F0-134D7DF3D40D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024A2BBD-39B5-462B-BA12-3A5A1AF1FD30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024A2BBD-39B5-462B-BA12-3A5A1AF1FD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024A2BBD-39B5-462B-BA12-3A5A1AF1FD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024A2BBD-39B5-462B-BA12-3A5A1AF1FD30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4204A79A-8E76-4ABC-A8F3-3249A6906733}
+	EndGlobalSection
+EndGlobal
