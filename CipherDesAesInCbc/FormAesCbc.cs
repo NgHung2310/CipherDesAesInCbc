@@ -32,7 +32,8 @@ namespace CipherDesAesInCbc
                         key = aesAlg.Key;
                         iv = aesAlg.IV;
                         string pathO = saveFileDialog1.FileName;
-                        CryptAesCbcFileToFile.Decrypt(pathI, pathO, key, iv);
+                        CryptAesCbcFileToFile.Encrypt(pathI, pathO, key, iv);
+                        CryptAesCbcFileToFile.Decrypt(pathO, pathI, key, iv);
                     }
                 }
             }    

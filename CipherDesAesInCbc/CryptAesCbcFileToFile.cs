@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -33,7 +34,7 @@ namespace CipherDesAesInCbc
                 List<string> lstStr = new List<string>();                
                 foreach (byte[] byteCipher in lstCipher)
                 {
-                    lstStr.Add(Encoding.ASCII.GetString(byteCipher));
+                    lstStr.Add(Convert.ToBase64String(byteCipher));
                 }
                 System.IO.File.WriteAllLines(pathO, lstStr);
             }
@@ -59,7 +60,7 @@ namespace CipherDesAesInCbc
             string[] lines = System.IO.File.ReadAllLines(pathI);
             foreach (string linePlain in lines)
             {
-                byte[] bytePlain = Encoding.ASCII.GetBytes(linePlain);
+                byte[] bytePlain = Convert.FromBase64String(linePlain);
                 lstCipher.Add(CryptAesCbc.Decrypt(bytePlain, key, iv));
             }
             System.IO.File.WriteAllLines(pathO, lstCipher);
