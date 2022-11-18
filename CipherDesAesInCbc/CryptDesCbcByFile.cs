@@ -40,7 +40,7 @@ namespace CipherDesAesInCbc
                         byte[] toEncrypt = Encoding.UTF8.GetBytes(text);
 
                         // Write the byte array to the crypto stream.
-                        cStream.Write(toEncrypt, 0, toEncrypt.Length);
+                        cStream.Write(toEncrypt, 0, toEncrypt.Length); 
                     }
                 }
             }
