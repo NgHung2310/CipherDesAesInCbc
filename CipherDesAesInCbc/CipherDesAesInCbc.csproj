@@ -46,12 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="CryptAesCbc.cs" />
     <Compile Include="CryptAesCbcByFile.cs" />
     <Compile Include="CryptAesCbcFileToFile.cs" />
     <Compile Include="CryptDesCbc.cs" />
     <Compile Include="CryptDesCbcByFile.cs" />
+    <Compile Include="CryptDesCbcFileToFile.cs" />
     <Compile Include="FormAesCbc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAesCbc.resx">
       <DependentUpon>FormAesCbc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDesCbc.resx">
+      <DependentUpon>FormDesCbc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuMain.resx">
       <DependentUpon>FormMenuMain.cs</DependentUpon>

@@ -12,7 +12,7 @@ namespace CipherDesAesInCbc
     public class CryptDesCbc
     {
 
-        public static byte[] EncryptTextToMemory(string text, byte[] key, byte[] iv)
+        public static byte[] Encrypt(string text, byte[] key, byte[] iv)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace CipherDesAesInCbc
             }
         }
 
-        public static string DecryptTextFromMemory(byte[] encrypted, byte[] key, byte[] iv)
+        public static string Decrypt(byte[] encrypted, byte[] key, byte[] iv)
         {
             try
             {

@@ -40,10 +40,9 @@
             // statusStrip
             // 
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip.Location = new System.Drawing.Point(0, 536);
+            this.statusStrip.Location = new System.Drawing.Point(0, 745);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip.Size = new System.Drawing.Size(843, 22);
+            this.statusStrip.Size = new System.Drawing.Size(1350, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -55,33 +54,35 @@
             this.dESCBCToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(843, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1350, 29);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // aESCBCToolStripMenuItem
             // 
+            this.aESCBCToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aESCBCToolStripMenuItem.Name = "aESCBCToolStripMenuItem";
-            this.aESCBCToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
+            this.aESCBCToolStripMenuItem.Size = new System.Drawing.Size(84, 25);
             this.aESCBCToolStripMenuItem.Text = "AES-CBC";
             this.aESCBCToolStripMenuItem.Click += new System.EventHandler(this.aESCBCToolStripMenuItem_Click);
             // 
             // dESCBCToolStripMenuItem
             // 
+            this.dESCBCToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dESCBCToolStripMenuItem.Name = "dESCBCToolStripMenuItem";
-            this.dESCBCToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.dESCBCToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
             this.dESCBCToolStripMenuItem.Text = "DES-CBC";
             this.dESCBCToolStripMenuItem.Click += new System.EventHandler(this.dESCBCToolStripMenuItem_Click);
             // 
             // FormMenuMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 558);
+            this.ClientSize = new System.Drawing.Size(1350, 767);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMenuMain";
             this.Text = "FormMenuMain";
             this.menuStrip1.ResumeLayout(false);

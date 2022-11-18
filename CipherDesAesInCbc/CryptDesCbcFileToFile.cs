@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -10,7 +8,7 @@ using System.Windows.Forms;
 
 namespace CipherDesAesInCbc
 {
-    public class CryptAesCbcFileToFile
+    public class CryptDesCbcFileToFile
     {
         public static void Encrypt(string pathI, string pathO, byte[] key, byte[] iv)
         {
@@ -27,11 +25,11 @@ namespace CipherDesAesInCbc
             {
                 List<byte[]> lstCipher = new List<byte[]>();
                 string[] lines = System.IO.File.ReadAllLines(pathI);
-                foreach(string linePlain in lines)
+                foreach (string linePlain in lines)
                 {
-                    lstCipher.Add(CryptAesCbc.Encrypt(linePlain, key, iv));
+                    lstCipher.Add(CryptDesCbc.Encrypt(linePlain, key, iv));
                 }
-                List<string> lstStr = new List<string>();                
+                List<string> lstStr = new List<string>();
                 foreach (byte[] byteCipher in lstCipher)
                 {
                     lstStr.Add(Convert.ToBase64String(byteCipher));
@@ -41,10 +39,11 @@ namespace CipherDesAesInCbc
             catch (CryptographicException e)
             {
                 MessageBox.Show("A Cryptographic error occurred: {0}", e.Message);
+                throw;
             }
         }
 
-        public static void Decrypt(string pathI,string pathO, byte[] key, byte[] iv)
+        public static void Decrypt(string pathI, string pathO, byte[] key, byte[] iv)
         {
             // Check arguments.
             if (pathI == null || pathI.Length <= 0)
@@ -60,7 +59,7 @@ namespace CipherDesAesInCbc
             foreach (string linePlain in lines)
             {
                 byte[] bytePlain = Convert.FromBase64String(linePlain);
-                lstCipher.Add(CryptAesCbc.Decrypt(bytePlain, key, iv));
+                lstCipher.Add(CryptDesCbc.Decrypt(bytePlain, key, iv));
             }
             System.IO.File.WriteAllLines(pathO, lstCipher);
         }

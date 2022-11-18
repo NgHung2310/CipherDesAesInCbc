@@ -13,7 +13,7 @@ namespace CipherDesAesInCbc
         public static byte[] Encrypt(string plainText, byte[] Key, byte[] IV)
         {
             // Check arguments.
-            if (plainText == null || plainText.Length <= 0)
+            if ( plainText.Length <= 0)
                 throw new ArgumentNullException("plainText");
             if (Key == null || Key.Length <= 0)
                 throw new ArgumentNullException("Key");
@@ -45,7 +45,6 @@ namespace CipherDesAesInCbc
                     }
                 }
             }
-
             // Return the encrypted bytes from the memory stream.
             return encrypted;
         }
